@@ -1,0 +1,8 @@
+https://www.arubacloud.com/tutorial/how-to-enable-https-protocol-with-apache-2-on-ubuntu-20-04.aspx
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
+openssl rsa -in key.pem -out key_nopass.pem
+mv key_nopass.pem key.pem
+ls
+cat key.pem
+
+
